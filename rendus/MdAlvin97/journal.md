@@ -19,3 +19,22 @@ Etape C
 Explication de l'index :
 C'est une étape entre mon fichier modifié et l'historique Git.
 Quand je fais git add ça va le préparer pour ensuite enregistrer avec le commit.
+
+Etape D 
+Différence entre fichier enregistré, index et commit :
+Un fichier enregistré est lorsque qu'on enregistre celui-ci tout simplement dans l'éditeur, il n'est pas considéré par Git.
+
+L'index c'est l'étape entre mon fichier modifié et l'historique Git. Quand je fais git add ça va le préparer pour ensuite enregistrer avec le commit.
+
+Un commit c'est l'enregistrement des fichiers dans l'historique Git, et qui sont prêt à être envoyé (push) vers Github.
+
+Trace individuelle 
+Un court extrait du log :
+$ git log --oneline
+6ae6c92 (HEAD -> main) docs: expliquer le fonctionnement de l index
+31d8bd4 chore: ignorer les fichiers locaux
+1aa0851 docs: preciser les conditions d acces
+3d00d42 docs: presenter le forum ENSUP
+...
+
+

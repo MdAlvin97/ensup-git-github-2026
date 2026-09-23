@@ -128,3 +128,33 @@ index 80bb094..b7a997f 100644
 
 git log --oneline -- acces.md permet de voir le commit qui a été fait dont le fichier acces.md y figure dedans.
 Et de git show 31ada33 montre tous les ajouts et les modifications qui a eu lieu en faisant ce commit.
+
+
+TP 2
+
+2.Avant de revenir sur main, prédisez quels fichiers seront visibles :
+Je pense que tous les fichiers seront visibles y compris le nouveau fichier programme.md
+
+4. Expliquer
+sur quelle branche faut-il être pour intégrer une évolution dans main ? Il faut être sur la branche main
+
+Quelle commande prouve que le contenu est présent ? La commande ls prouve bien que le contenue est présent
+
+Dessinez le graphe avant et après :
+Avant :
+main:                 A------B
+                              \
+feature/programme               C    (nouveau commit)
+
+Après :
+main                 A---B---C
+
+
+Enquête 2
+Comparez avec le fast-forward du TP 2 :
+J'ai fait une nouvelle branche avec un nouveau fichier, puis sur le main j'ai fait une modification sur le README.md donc Git a créé un vrai commit de fusion avec deux parents.
+
+$ git show --no-patch --format="%h %p %s" HEAD
+02185e0 4a927a1 af035b1 merge: ajouter les indications d accessibilite
+
+Les deux identifiants de parents sont : 4a927a1 (main) et af035b1 (feature/accessibilite).

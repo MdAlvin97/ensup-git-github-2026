@@ -1,8 +1,12 @@
-# Forum des associations ENSUP
-Un guide pour préparer sa première visite sur le campus.
-Entrée gratuite.
-Inscription sur place.
-Horaire : 9h-12h
-Du 01/10/2026 au 10/10/2026
-Accueil des visiteurs à partir de 09h00.
+# Forum ENSUP : version visiteurs
+
+## Objectif
+Donner aux visiteurs toutes les informations pour profiter du forum.
+
+## Consignes d'arrivée
 Prévoir une arrivée dix minutes avant le premier atelier.
+
+## Pour aller plus loin
+- [Programme](programme.md)
+- [Accès](acces.md)
+- [Équipe](equipe.md)

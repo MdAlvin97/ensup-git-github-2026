@@ -226,3 +226,12 @@ git commit -m "fix: convenir de 09h45"
 Pourquoi fetch seul n'ajoute pas la visite libre à mon fichier local ?
 git fetch origin télécharge les commits de GitHub et met à jour
 `origin/main`, mais il ne modifie ni ma branche `main` ni mes fichiers.
+
+
+Mission finale
+
+l'URL de la PR : https://github.com/MdAlvin97/ensup-git-github-2026/pull/3
+
+où doit-il se présenter ? (acces.md, point de rendez-vous)
+que faire si l'entrée est fermée ? (acces.md)
+à qui demander de l'aide ? (equipe.md, contact sur place)

@@ -6,5 +6,10 @@ Responsable : Mme.Louise Morgan
 
 En cas d'absence, la coordination se reporte automatiquement sur le second responsable présent sur place.
 
-## Consigne
-Pour toute question, rendez-vous directement au stand d'accueil à l'entrée du forum.
+| Fonction | Relais en cas d'absence |
+|---|---|
+| Accueil visiteurs | Coordination des salles |
+| Coordination des salles | Accueil visiteurs |
+
+## Contact sur place
+En cas de besoin, s'adresser au point d'accueil du Hall A.

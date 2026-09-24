@@ -183,3 +183,13 @@ Commande pour vérifier : git fetch (récupère les nouveaux commits sans les fu
 3. nothing to commit alors que le fichier paraît modifié :
 le fichier n'est peut-être pas enregistré dans l'éditeur, pas dans le bon dossier ou déjà commité.
 Commande pour vérifier : git status
+
+TP4
+D.
+
+PR écrite : https://github.com/MdAlvin97/ensup-git-github-2026/pull/1
+PR relue : https://github.com/MdAlvin97/ensup-git-github-2026/pull/1
+
+Commentaire utile reçu : "Qui prend le relais si la coordination des salles est absente ? Ajoute une consigne précise."
+
+commit de correction : 336a5b7 docs: preciser le remplacement en cas d absence

@@ -193,3 +193,32 @@ PR relue : https://github.com/MdAlvin97/ensup-git-github-2026/pull/1
 Commentaire utile reçu : "Qui prend le relais si la coordination des salles est absente ? Ajoute une consigne précise."
 
 commit de correction : 336a5b7 docs: preciser le remplacement en cas d absence
+
+TP5
+F.
+Pourquoi Git n'a-t-il pas choisi seul ? Git n'a aucun moyen de savoir quelle heure est la bonne, c'est à une personne réelle de le faire. Il s'arrête et marque le conflit.
+
+Quelle version était HEAD ?
+HEAD désigne la branche sur laquelle on se trouve au moment de la fusion. Donc pour 9h30 c'était main et pour 10h00 c'était feature/horaire
+
+À quoi sert git merge --abort ?
+Cette commande annule la fusion en cours et remet le dépôt dans l'état exact, avant le git merge.
+
+
+G.
+Deux parents du commit de fusion :
+09e975e (main) docs: annoncer 09h30 
+80b1b4d (feature/horaire) feat: proposer 10h00
+
+Erreur de départ : brouillon.txt ajouté à l'index par erreur,
+puis retiré avec git restore --staged.
+
+Deux propositions :
+main : Accueil : 09h30
+feature/horaire : Accueil : 10h00
+
+Décision retenue : Accueil : 09h45.
+
+Commandes de fin de fusion :
+git add horaire.txt
+git commit -m "fix: convenir de 09h45"

@@ -169,3 +169,17 @@ Le fork copie un dépôt vers un autre compte GitHub.
 Le clone permet de copier un dépôt vers mon PC, c'est une action qui se fait avec Git (côté PC).
 
 Une branche c'est une ligne de développement à l'intérieur d'un même dépôt (que ce soit en local ou sur GitHub). Elle permet de travailler sur une chose sans toucher à main.
+
+Enquête 3 
+
+1. Permission denied :
+origin pointe peut-être vers le dépôt du formateur au lieu de mon propre fork. Il faut vérifier quel compte est connecté et où origin pointe réellement.
+Commande pour vérifier : git remote -v
+
+2. non-fast-forward :
+Des commits ont probablement été ajoutés sur GitHub depuis mon dernier envoi.
+Commande pour vérifier : git fetch (récupère les nouveaux commits sans les fusionner)
+
+3. nothing to commit alors que le fichier paraît modifié :
+le fichier n'est peut-être pas enregistré dans l'éditeur, pas dans le bon dossier ou déjà commité.
+Commande pour vérifier : git status

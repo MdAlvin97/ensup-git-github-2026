@@ -235,3 +235,18 @@ l'URL de la PR : https://github.com/MdAlvin97/ensup-git-github-2026/pull/3
 où doit-il se présenter ? (acces.md, point de rendez-vous)
 que faire si l'entrée est fermée ? (acces.md)
 à qui demander de l'aide ? (equipe.md, contact sur place)
+
+Issue : #2
+
+Revue effectuée** : auto-revue de la PR #3.
+Changement simulé : premier atelier décalé de 10h00 à 10h30, commit de correction
+« docs: decaler le premier atelier a 10h30 ». Relecture README / programme : aucune contradiction.
+
+Problème rencontré : en ouvrant la PR de livraison, GitHub la préparait vers le dépôt du formateur (AbidHamza) avec le modèle de la PR de collecte, alors que l'énoncé demandait une PR dans mon fork.
+
+Diagnostic : sur un fork, la destination par défaut est le dépôt d'origine ; l'URL
+« compare » commençait par github.com/AbidHamza/...
+
+Solution : j'ai changé le base repository pour MdAlvin97/ensup-git-github-2026 (base main, compare feature/livraison). La PR #3 est bien dans mon fork.
+
+Tag : v1.0 dans mon fork.

@@ -250,3 +250,46 @@ Diagnostic : sur un fork, la destination par défaut est le dépôt d'origine ; 
 Solution : j'ai changé le base repository pour MdAlvin97/ensup-git-github-2026 (base main, compare feature/livraison). La PR #3 est bien dans mon fork.
 
 Tag : v1.0 dans mon fork.
+
+## Contrôle de rendu
+
+Que copie git add ?
+Il copie le contenu actuel du fichier dans l'index (la zone de préparation).
+Le commit enregistre ce qui est dans l'index, pas ce qui est sur le disque.
+Si je modifie le fichier après add, il faut refaire add.
+
+Comment prouver qu'un commit a été poussé ?
+git status indique « up to date with origin/main », git log --oneline --all
+montre origin/main sur le même commit que main, et le commit est visible
+sur GitHub dans l'onglet Commits avec son hash.
+
+Pourquoi Git n'a-t-il pas choisi l'horaire ?
+Les deux branches avaient modifié la même ligne de horaire.txt (09h30 et 10h00)
+depuis le même ancêtre. Git ne peut pas savoir laquelle est juste : c'est une
+décision d'une personne réelle (09h45).
+
+Que reste-t-il après un revert ?
+Le commit d'origine reste dans l'historique, et un nouveau commit inverse ses
+changements. Le fichier disparaît du dossier de travail, mais l'histoire est intacte.
+
+
+Un diff : commit docs: decaler le premier atelier a 10h30 : 
+
+diff --git a/rendus/MdAlvin97/programme.md b/rendus/MdAlvin97/programme.md
+index 10ec602..8a30598 100644
+--- a/rendus/MdAlvin97/programme.md
++++ b/rendus/MdAlvin97/programme.md
+@@ -2,7 +2,7 @@
+
+
+ 09h30 - 10h00 : accueil : Hall A
+-10h00  - 11h00 : découverte des formations : Salle 1
+-11h00 - 12h00 : démonstrations : Salle 2
+-12h00 - 13h00 : visite libre des stands : Hall A
+-13h00 - 14h00 : pause déjeuner : Espace détente
+\ No newline at end of file
++10h30  - 11h30 : atelier 1découverte des formations : Salle 1
++11h30 - 12h30 : atelier 2 démonstrations : Salle 2
++12h30 - 13h30 : visite libre des stands : Hall A
++13h30 - 14h30 : pause déjeuner : Espace détente
+\ No newline at end of file

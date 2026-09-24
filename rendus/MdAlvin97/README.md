@@ -5,3 +5,4 @@ Inscription sur place.
 Horaire : 9h-12h
 Du 01/10/2026 au 10/10/2026
 Accueil des visiteurs à partir de 09h00.
+Prévoir une arrivée dix minutes avant le premier atelier.

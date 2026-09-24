@@ -158,3 +158,14 @@ $ git show --no-patch --format="%h %p %s" HEAD
 02185e0 4a927a1 af035b1 merge: ajouter les indications d accessibilite
 
 Les deux identifiants de parents sont : 4a927a1 (main) et af035b1 (feature/accessibilite).
+
+
+TP3 
+L'URL de ma PR : https://github.com/AbidHamza ensup-git-github-2026/pull/1
+
+Différence entre fork, clone et branche : 
+Le fork copie un dépôt vers un autre compte GitHub.
+
+Le clone permet de copier un dépôt vers mon PC, c'est une action qui se fait avec Git (côté PC).
+
+Une branche c'est une ligne de développement à l'intérieur d'un même dépôt (que ce soit en local ou sur GitHub). Elle permet de travailler sur une chose sans toucher à main.
